@@ -9,6 +9,10 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { CmpComponent } from './cmp/cmp.component';
+import { EvenComponent } from './even/even.component';
+import { OddComponent } from './odd/odd.component';
+import { GameControlComponent } from './game-control/game-control.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    CmpComponent,
+    EvenComponent,
+    OddComponent,
+    GameControlComponent,
   ],
   imports: [
     BrowserModule
