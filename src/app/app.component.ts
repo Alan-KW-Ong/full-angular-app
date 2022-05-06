@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'full-angular-app';
   oddNumbers: number[] = [];
   evenNumbers: number[] = [];
+  value = 10;
 
   onIntervalFired(firedNumber: number) {
     if (firedNumber % 2 === 0) {

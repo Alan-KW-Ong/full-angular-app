@@ -37,4 +37,10 @@
       <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
     </div>
   </div>
+  <div class="row" [ngSwitch]="value">
+    <p *ngSwitchCase="5">5</p>
+    <p *ngSwitchCase="10">10</p>
+    <p *ngSwitchCase="100">100</p>
+    <p *ngSwitchDefault>Default</p>
+  </div>
 </div>
