@@ -13,6 +13,7 @@ import { CmpComponent } from './cmp/cmp.component';
 import { EvenComponent } from './even/even.component';
 import { OddComponent } from './odd/odd.component';
 import { GameControlComponent } from './game-control/game-control.component';
+import { DropDownDirective } from './shared/dropDown.directive';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { GameControlComponent } from './game-control/game-control.component';
     EvenComponent,
     OddComponent,
     GameControlComponent,
+    DropDownDirective
   ],
   imports: [
     BrowserModule
