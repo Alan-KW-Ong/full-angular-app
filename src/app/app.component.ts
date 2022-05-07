@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountsService } from './shared/account.service';
 import { LoggingService } from './shared/logging.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [LoggingService]
+  providers: [LoggingService, AccountsService]
 })
 export class AppComponent implements OnInit {
   title = 'full-angular-app';
   oddNumbers: number[] = [];
   evenNumbers: number[] = [];
   value = 10;
+  accounts: {name: string, status: string}[] = [];
 
   onIntervalFired(firedNumber: number) {
     if (firedNumber % 2 === 0) {
@@ -23,10 +25,10 @@ export class AppComponent implements OnInit {
     }
   }
 
-  constructor(private loggingService: LoggingService) { }
+  constructor(private loggingService: LoggingService, private accountService: AccountsService) {}
 
-  ngOnInit(): void {
-    
+  ngOnInit() {
+    this.accounts = this.accountService.accounts;
   }
   
 }

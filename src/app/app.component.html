@@ -27,6 +27,15 @@
     </div>
   </div>
   <div class="row">
+    <div class="col-xs-12" *ngFor="let account of accounts">
+      {{ account.name }}
+      
+      {{ account.status }}
+      <hr>
+    </div>
+      
+  </div>
+  <div class="row">
     <div class="col-xs-12">
       <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
     </div>
